@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="camera.css">
+<head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh"></script>
+    <title>I see you! | Face Mesh</title>
+  
+  	<!-- Javascript imports -->
+  	<script src="camera.js"></script>
+    <script>
+        main()
+    </script>
+</head>
+	
+<body style="background-color:aliceblue;text-align:center;">
+    <video autoplay muted playsinline hidden id="video"  style="width: auto; height: auto; transform: scaleX(-1);"></video>
+    <canvas id="facecanvas"></canvas>
+    <button id="myBtn">take</button>
+    <canvas id="printcanvas"></canvas>
+</body>
+</html>
